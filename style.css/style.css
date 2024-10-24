@@ -302,9 +302,9 @@ p {
 }
 
 .about-menu {
-    background-image: url(../img/back2.svg);
+    background-image: url(../img/back2.jpg);
     background-size: cover; 
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     font-weight: 600;
     font-size: 20px;
@@ -312,8 +312,8 @@ p {
     flex-direction: column;
     gap: 10px;
     padding: 10px;
-    margin-top: 400px;
-    margin-bottom: 150px;
+    margin-top: 300px;
+    margin-bottom: 100px;
     align-self: flex-start;
 }
 
@@ -649,8 +649,8 @@ footer {
 
     .about,
     .about-menu {
-
-        margin-bottom: 20px;
+        margin-top: 35px;
+        margin-bottom: 10px;
     }
 
     .footer {
