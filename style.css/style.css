@@ -607,13 +607,12 @@ footer {
         display: flex; /* Устанавливает флекс-контейнер */
         justify-content: space-between; /* Распределяет элементы по ширине */
         align-items: center; /* Центрирует элементы по вертикали */
-        max-height: 10%;
+        max-height: 70px;
         width: 100%; /* Занимает всю ширину */
         position: fixed; /* Фиксирует блок внизу экрана */
         bottom: 0; /* Прижимает к низу */
         background-color: white; /* Задать цвет фона, если нужно */
         padding: 10px 25px 10px 25px; /* Отступы сверху и снизу */
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Тень для лучшего визуального отделения */
         left: 0;
     }
    
