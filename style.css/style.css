@@ -531,6 +531,9 @@ footer {
         height: 100px;
         /* Задайте нужную высоту контейнера */
     }
+    .bar{
+        display: none;
+    }
 
     .menu {
         margin: 0;
@@ -604,6 +607,7 @@ footer {
         display: flex; /* Устанавливает флекс-контейнер */
         justify-content: space-between; /* Распределяет элементы по ширине */
         align-items: center; /* Центрирует элементы по вертикали */
+        max-height: 10%;
         width: 100%; /* Занимает всю ширину */
         position: fixed; /* Фиксирует блок внизу экрана */
         bottom: 0; /* Прижимает к низу */
