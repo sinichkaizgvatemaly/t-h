@@ -23,16 +23,16 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         },
     };
-    
+
 
     const contactModal = document.getElementById('contact-modal');
     const hoursModal = document.getElementById('hours-modal');
     const aboutModal = document.getElementById('contact-about');
-    
+
     const contactsLink = document.getElementById('contacts-link');
     const workingHoursLink = document.getElementById('working-hours-link');
     const aboutLink = document.getElementById('open-modal');
-    
+
     const closeButtons = document.querySelectorAll('.close-button');
 
     // Функция для открытия модального окна
@@ -83,7 +83,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuList = document.getElementById('menu-list');
     burger.onclick = () => {
         menuList.classList.toggle('active');
+        burger.classList.toggle('active');
     };
+        
 
     // Прокрутка навигационного меню
     window.addEventListener('scroll', () => {
@@ -110,11 +112,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const scrollRightButton = document.querySelector('.scroll-right');
 
     const scrollLeft = () => {
-        scrollContainer.scrollBy({ left: -300, behavior: 'smooth' });
+        scrollContainer.scrollBy({
+            left: -300,
+            behavior: 'smooth'
+        });
     };
 
     const scrollRight = () => {
-        scrollContainer.scrollBy({ left: 300, behavior: 'smooth' });
+        scrollContainer.scrollBy({
+            left: 300,
+            behavior: 'smooth'
+        });
     };
 
     scrollLeftButton.onclick = scrollLeft;
