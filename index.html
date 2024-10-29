@@ -1,191 +1,218 @@
+<!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet" />
-    <meta name="description" content="Thai House - Restoranas tailandietiško maisto Vilniuje">
-    <link rel="icon" href="img/logo.png" type="image/x-icon">
-    <title>Thai House - Tailandietiška virtuvė Vilniuje</title>
-    <link rel="stylesheet" href="style.css/style.css">
-  </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <div class="header-container">
-          <nav class="menu">
-            <div class="language-switcher">
-              <select id="language" onchange="changeLanguage(this.value)">
-                <option value="lt">LT</option>
-                <option value="en">EN</option>
-                <option value="ru">RU</option>
-                <option value="uk">UA</option>
-              </select>
-            </div>
-            <a href="index.html" class="logo">
-              <img src="img/logo.png" alt="logo Thai House" width="80" height="80">
-            </a>
-            <div class="burger" id="burger">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="line"></div>
-            </div>
-            <ul class="menu-list" id="menu-list">
-              <li class="menu-item">
-                <a href="#section1" class="menu-link" aria-haspopup="false">Meniu</a>
-              </li>
-              <li class="menu-item">
-                <a href="https://wolt.com/lt/ltu/vilnius/restaurant/thai-house-naugarduko-g?srsltid=AfmBOoqIF9NFs0poB563ukx4mNWUPhQnRxaYkJNheM5_4zNECgmeVlAz" class="menu-link" target="_blank" rel="noopener noreferrer">Pristatymas</a>
-              </li>
-              <li class="menu-item">
-                <a href="javascript:void(0)" class="menu-link">Parduotuvė</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" id="working-hours-link" class="menu-link">Darbo valandos</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" id="contacts-link" class="menu-link">Kontaktai</a>
-              </li>
-            </ul>
-            <div class="modal" id="contact-modal">
-              <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <img src="img/logo.png" alt="Logo" class="modal-logo" width="100" height="100">
-                <h3>Contact Information</h3>
-                <a href="tel:068349830" class="image-link-tel" aria-label="Number Thai House">
-                  <img src="img/tel.png" alt="tel" width="20" height="20">068349830
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Web Studio</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:600" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+    <div class="wraper">
+        <header class="header" id="header">
+            <div class="header-all">
+                <a href="index.html" class="WebStudio WebStudio-header">
+                    <span class="web">Kior</span> <span class="studio Studio-header">Studio</span>
                 </a>
-                <p>Email: <a href="mailto:info@thaihouse.lt">info@thaihouse.lt</a></p>
-                <a href="https://www.google.com/maps?q=Naugarduko+g.+12,+Vilnius,+03225+Vilniaus+m.+sav." target="_blank">
-                                  Adresas Vilnius: Naugarduko g. 12, Vilnius, 03225 Vilniaus m. sav.
-                              </a>
-                <a href="https://www.google.com/maps?q=Pramon%C4%97s+pr.+16a,+LT-51186,+Kaunas" target="_blank">
-                                  Adresas Kaunas: Pramonės pr. 16a, LT-51186, Kaunas
-                              </a>
-              </div>
+                <div class="header-menu-items">
+                    <a href="index.html" class="header-menu-studia">Студія</a>
+                    <a href="studia.html" class="header-menu-portfolio">Портфоліо</a>
+                    <a href="contacts.html" class="header-menu-contacts">Контакти</a>
+                </div>
+                <div class="header-contacts">
+                    <p>
+                        <a href="mailto:pavelkior@icloud.com">pavelkior@icloud.com</a>
+                    </p>
+                    <p>
+                        <a href="tel:+37064112831">+370 (641) 12 831</a>
+                    </p>
+                </div>
             </div>
-            <div class="modal" id="hours-modal">
-              <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <img src="img/logo.png" alt="Logo" class="modal-logo" width="100" height="100">
-                <h3>Darbo Valandos</h3>
-                <p>Pirmadienis: Uždaryta</p>
-                <p>Antradienis: 11:00 – 22:00</p>
-                <p>Trečiadienis: 11:00 – 22:00</p>
-                <p>Ketvirtadienis: 11:00 – 22:00</p>
-                <p>Penktadienis: 11:00 – 23:00</p>
-                <p>Šeštadienis: 12:00 – 23:00</p>
-                <p>Sekmadienis: 12:00 – 22:00</p>
-              </div>
-            </div>
-            <div class="bar media">
-                    <a href="https://www.google.com/maps/place/THAI+HOUSE+Vilnius/@54.6770219,25.2739765,17z/data=!3m1!4b1!4m6!3m5!1s0x46e7196283d1f5af:0xc9c9062450026c8f!8m2!3d54.6770219!4d25.2765514!16s%2Fg%2F11fl5nqrv7?entry=ttu&g_ep=EgoyMDI0MTAyMi4wIKXMDSoASAFQAw%3D%3D" class="image-link-geo" aria-label="Наша геолокация">
-                        <img src="img/geo.png" alt="geo" width="20" height="20">
-                    </a>
-                    <a href="https://www.instagram.com/thaihouse.lt/" class="image-link-instagram" aria-label="Instagram Thai House" target="_blank" rel="noopener noreferrer">
-                        <img src="img/insta.png" alt="Instagram" width="20" height="20">
-                    </a>
-                    <a href="tel:068349830" class="image-link-tel" aria-label="Number Thai House">
-                        <img src="img/tel.png" alt="tel" width="20" height="20">
-                    </a>
-                    <a href="https://www.facebook.com/ThaiHouse.lt/" class="image-link-facebook" aria-label="facebook Thai House" target="_blank" rel="noopener noreferrer">
-                        <img src="img/facebook.png" alt="facebook" width="20" height="20">
-                    </a>
-            </div>
-        </div>
-      </header>
-      <main>
-        <section class="about">
-          <h2 id="about-title">Tailandiečių restoranas Vilniuje</h2>
-          <p id="about-description">
-            Įkvėpti Tailando kultūros turtingumo ir unikalios virtuvės, mes, restorano komanda, siekėme sukurti erdvę, kurioje kiekvienas
-            <br> svečias galėtų mėgautis ne tik gardžiais patiekalais, bet ir tikro tailandietiško svetingumo atmosfera.
-            <br> Kelionės po Tailandą mums suteikė nepamirštamų įspūdžių apie gatvės maisto aromatus ir tradicinius kulinarinius malonumus.
-            <br> Džiaugiamės galėdami su jumis pasidalinti autentiškais skoniais ir šeimos receptais, kad kiekvienas apsilankymas mūsų restorane
-            <br> taptų tikru pasinerimu į nuostabų Tailando virtuvės ir kultūros pasaulį.
-          </p>
-        </section>
-        <section class="about-menu">
-          <div class="about menu-th">
-            <div class="menu-header capital">
-              <h2>Meniu</h2>
-              <div class="line"></div>
-            </div>
-            <p class="about-menu-text">
-              „Thai House“ meniu siūlo platų patiekalų asortimentą, atspindintį unikalų saldaus, rūgštaus, aštraus ir sūraus skonių derinį,
-              <br> būdingą tajų virtuvei. Čia galite paragauti tradicinio Tom Yum su jūrų gėrybėmis ir Pad Thai – keptų makaronų su daržovėmis ir
-              <br> riešutais, taip pat daugybę vegetariškų patiekalų, gaminamų iš šviežių vietinių ingredientų, suteikiančių patiekalams sodrų skonį ir
-              <br> aromatą. Patiekalų aštrumą galima pritaikyti pagal kliento pageidavimus. Desertams siūlomas lipnus ryžių pudingas su mango ir kokosų
-              <br> pienu bei egzotiški gėrimai, tokie kaip tajų arbata su pienu ir kokosų vanduo
-            </p>
-          </div>
-        </section>
-        <section id="section1" class="our-menu">
-          <div class="rectangle">
-            <a class="bar-menu" href="bar.html">
-              <img src="img/Menu-img.png" alt="Menu" height="240" width="336">
-            </a>
-            <div class="menu-header second">
-              <h2>Pagrindinis meniu</h2>
-              <div class="line"></div>
-            </div>
-          </div>
-          <div class="rectangle">
-            <a class="bar-kitchen" href="menu.html">
-              <img src="img/drinks.png" alt="Drinks" height="240">
-            </a>
-            <div class="menu-header second">
-              <h2>Gėrimų meniu</h2>
-              <div class="line"></div>
-            </div>
-          </div>
-        </section>
-        <section class="scroll-container" id="scrollContainer">
-          <button class="scroll-button scroll-left">&#10094;</button>
-          <div class="scroll-content" style="overflow: auto; white-space: nowrap;">
-            <img src="scroll-container/scroll1.jpg" alt="scroll Image 1" width="300" height="300">
-            <img src="scroll-container/scroll2.jpg" alt="scroll Image 2" width="300" height="300">
-            <img src="scroll-container/scroll3.jpg" alt="scroll Image 3" width="300" height="300">
-            <img src="scroll-container/scroll4.jpg" alt="scroll Image 4" width="300" height="300">
-            <img src="scroll-container/scroll5.jpg" alt="scroll Image 5" width="300" height="300">
-            <img src="scroll-container/scroll6.jpg" alt="scroll Image 6" width="300" height="300">
-            <img src="scroll-container/scroll7.jpg" alt="scroll Image 7" width="300" height="300">
-            <img src="scroll-container/scroll8.jpg" alt="scroll Image 8" width="300" height="300">
-            <img src="scroll-container/scroll9.jpg" alt="scroll Image 9" width="300" height="300">
-            <img src="scroll-container/scroll10.jpg" alt="scroll Image 10" width="300" height="300">
-          </div>
-          <button class="scroll-button scroll-right">&#10095;</button>
-        </section>
-        <div class="drinks-logo">
-          <img src="img/chang.jpg" alt="Chang beer logo" width="50">
-          <img src="img/mekhong.png" alt="Mekhong whiskey logo" width="50">
-          <img src="img/Singha.webp" alt="Singha beer logo" width="50">
-        </div>
-      </main>
-      <footer class="footer">
-        <div class="footer-content">
-          <p>Sekite mus socialinėje žiniasklaidoje, kad gautumėte naujienų!</p>
-          <div class="footer-links">
-            <a href="#" id="open-modal">Apie mus</a>
-            <div class="modal" id="contact-about">
-              <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <p>
-                  Tailandietiško restorano „Thai House“ savininkas svajoja sukurti unikalią erdvę, kurioje svečiai galėtų mėgautis autentiška Tailando atmosfera.
-                  <br> Siekiama pasiūlyti autentiškus tailandietiškus patiekalus, pagamintus iš šviežių vietinių ingredientų, kad kiekvienam svečiui būtų suteikta
-                  <br> autentiška tajų virtuvės patirtis.
-                  <br> Jo idėjos apima:
+            <hr class="custom-line">
+        </header>
+        <main class="main" id="main">
+            <section class="block-one" id="block-one">
+                <h1>Ефективні рішення для<br>
+                    вашого бізнесу</h1>
+                <button class="category-button">Замовити</button>
+            </section>
+            <section class="columns">
+                <div class="column">
+                    <div class="column-img-wrapper">
+                        <img class="column-img" src="img/column-img/column-img1.png" alt="Изображение 1" height="70" width="70">
+                    </div>
+                    <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+                    <p>Ідейні міркування, і навіть початок<br>
+                        повсякденної роботи з формування<br> позиції.</p>
+                </div>
+                <div class="column">
+                    <div class="column-img-wrapper">
+                        <img class="column-img" src="img/column-img/column-img2.png" alt="Изображение 1" height="70" width="70">
+                    </div>
+                    <h3>ПУНКТУАЛЬНІСТЬ</h3>
+                    <p>Завдання організації, особливо рамки<br>
+                        і місце навчання кадрів тягне у себе.</p>
+                </div>
+                <div class="column">
+                    <div class="column-img-wrapper">
+                        <img class="column-img" src="img/column-img/column-img3.png" alt="Изображение 1" height="70" width="70">
+                    </div>
+                    <h3>ПЛАНУВАННЯ</h3>
+                    <p>Так само консультація з широким<br>
+                        активом значною мірою зумовлює.</p>
+                </div>
+                <div class="column">
+                    <div class="column-img-wrapper">
+                        <img class="column-img" src="img/column-img/column-img4.png" alt="Изображение 1" height="70" width="70">
+                    </div>
+                    <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                    <p>Значимість цих проблем настільки<br>
+                        очевидна, що реалізація планових<br>
+                        завдань.</p>
+                </div>
+            </section>
+            <section class="services" id="services">
+                <h2>Чим ми займаємося</h2>
+                <div class="service-gallery">
+                    <img src="img/img1.png" alt="service" class="gallery-item">
+                    <img src="img/img2.png" alt="service" class="gallery-item">
+                    <img src="img/img3.png" alt="service" class="gallery-item">
+                </div>
+            </section>
+            <section class="team-members">
+                <h2>Наша команда</h2>
+                <div class="team-members-container">
+						<div class="team-member">
+							<img src="img/team1.jpg" alt="Участник 1">
+							<h3>Pavlo Kior</h3>
+							<p>UI/UX Designer</p>
+							<div class="logos-icons">
+								 <a href="https://www.instagram.com/alex_kior227/" class="instagram-logo">
+									  <svg class="outer-circle" width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+											<circle cx="19" cy="19" r="19" class="background-circle"/>
+											<rect x="9" y="9" width="20" height="20" rx="4" ry="4" class="inner-square"/>
+											<circle cx="19" cy="19" r="4" class="camera-lens"/>
+											<circle cx="25" cy="13" r="1.5" class="flash"/>
+									  </svg>
+								 </a>
+								 <a href="https://www.facebook.com/profile.php?id=100017205552433" class="icon">f</a>
+								 <a href="#" class="twitter-icon">X</a>
+								 <a href="#" class="in-icon">in</a>
+							</div>
+					  </div>
+					  <div class="team-member">
+						<img src="img/team2.jpg" alt="Участник 1">
+						<h3>Alex Kior</h3>
+						<p>UI/UX Designer</p>
+						<div class="logos-icons">
+							 <a href="https://www.instagram.com/alex_kior227/" class="instagram-logo">
+								  <svg class="outer-circle" width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+										<circle cx="19" cy="19" r="19" class="background-circle"/>
+										<rect x="9" y="9" width="20" height="20" rx="4" ry="4" class="inner-square"/>
+										<circle cx="19" cy="19" r="4" class="camera-lens"/>
+										<circle cx="25" cy="13" r="1.5" class="flash"/>
+								  </svg>
+							 </a>
+							 <a href="https://www.facebook.com/cross.bazza" class="icon">f</a>
+							 <a href="#" class="twitter-icon">X</a>
+							 <a href="#" class="in-icon">in</a>
+						</div>
+				  </div>
+				  <div class="team-member">
+					<img src="img/team3.jpg" alt="Участник 1">
+					<h3>Ihor Mutsko</h3>
+					<p>UI/UX Designer</p>
+					<div class="logos-icons">
+						 <a href="https://www.instagram.com/alex_kior227/" class="instagram-logo">
+							  <svg class="outer-circle" width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="19" cy="19" r="19" class="background-circle"/>
+									<rect x="9" y="9" width="20" height="20" rx="4" ry="4" class="inner-square"/>
+									<circle cx="19" cy="19" r="4" class="camera-lens"/>
+									<circle cx="25" cy="13" r="1.5" class="flash"/>
+							  </svg>
+						 </a>
+						 <a href="https://www.facebook.com/profile.php?id=100086305373373" class="icon">f</a>
+						 <a href="#" class="twitter-icon">X</a>
+						 <a href="#" class="in-icon">in</a>
+					</div>
+			  </div>
+			  <div class="team-member">
+				<img src="img/team4.jpg" alt="Участник 1">
+				<h3>Margarita Kior</h3>
+				<p>UI/UX Designer</p>
+				<div class="logos-icons">
+					 <a href="https://www.instagram.com/alex_kior227/" class="instagram-logo">
+						  <svg class="outer-circle" width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+								<circle cx="19" cy="19" r="19" class="background-circle"/>
+								<rect x="9" y="9" width="20" height="20" rx="4" ry="4" class="inner-square"/>
+								<circle cx="19" cy="19" r="4" class="camera-lens"/>
+								<circle cx="25" cy="13" r="1.5" class="flash"/>
+						  </svg>
+					 </a>
+					 <a href="#" class="icon">f</a>
+					 <a href="#" class="twitter-icon">X</a>
+					 <a href="#" class="in-icon">in</a>
+				</div>
+		  </div>
+                </div>
+            </section>
+            <section class="partners-section">
+                <h2>Наши партнеры</h2>
+                <div class="partners-grid">
+                    <div class="partner-logo">
+                        <img src="img/partners/partners1.png" alt="Логотип партнера">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="img/partners/partners2.png" alt="Логотип партнера">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="img/partners/partners3.png" alt="Логотип партнера">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="img/partners/partners4.png" alt="Логотип партнера">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="img/partners/partners5.png" alt="Логотип партнера">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="img/partners/partners6.png" alt="Логотип партнера">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer" id="footer">
+            <div class="">
+                <a href="index.html" class="WebStudio WebStudio-header">
+                    <span class="web">Kior</span> <span class="studio WebStudio-footer">Studio</span>
+                </a>
+                <p class="footer-address">м. Київ, пр-т Лесі Українки, 26</p>
+                <p class="footer-email">
+                    <a href="mailto:pavelkior@icloud.com">pavelkior@icloud.com</a>
                 </p>
-              </div>
+                <p class="footer-phone">
+                    <a href="tel:+37064112831">+370 (641) 12 831</a>
+                </p>
             </div>
-            <a href="https://docs.google.com/document/d/1kBTCWPTSMSSH4anO2F2V8VD70m5rYCmbIaWbGQEJqKI/edit?tab=t.0">Meniu</a>
-            <a href="#privacy">Privacy Policy</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          &copy; 2024 Thai House. All rights reserved.
-        </div>
-    </div>
-    </footer>
-    <script src="js/script.js"></script>
-    </div>
-  </body>
-  </html>
+            <div class="footer-media">
+                <div class="logos-icons">
+						<a href="https://www.instagram.com/alex_kior227/" class="instagram-logo">
+							<svg class="outer-circle" width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+								 <circle cx="19" cy="19" r="19" class="background-circle"/>
+								 <rect x="9" y="9" width="20" height="20" rx="4" ry="4" class="inner-square"/>
+								 <circle cx="19" cy="19" r="4" class="camera-lens"/>
+								 <circle cx="25" cy="13" r="1.5" class="flash"/>
+							</svg>
+					  </a>
+                    <a href="#" class="icon">f</a>
+                    <a href="#" class="twitter-icon">X</a>
+                    <a href="#" class="in-icon">in</a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+</body>
+</html>
